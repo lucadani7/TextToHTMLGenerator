@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ webpage.title }}</title>
+    <style>
+        body {
+            background-color: {{ webpage.background_color }};
+            color: {{ webpage.text_color }};
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ webpage.title }}</h1>
+    <div>{{ webpage.content|safe }}</div>
+</body>
+</html>
